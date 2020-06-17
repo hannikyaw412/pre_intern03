@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <script>
+      document.addEventListener('DOMContentLoaded',function(){
+          document.querySelector('#main').onclick=function(){
+              document.querySelectorAll('.dropdown-color').forEach(function(a){
+                  a.onclick=function(){
+                    document.querySelector('.hello').style.color=a.dataset.color;
+
+                  };
+              });
+          };
+
+      });
+  </script>
+</head>
+<body>
+
+<div class="container" id="main">
+     <h1 class="hello">Warmly Welcome to our Group!</h1>
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+            <a href="#" class=" dropdown-menu dropdown-color" data-color="red">Red</a>
+            <a href="#" class=" dropdown-menu dropdown-color" data-color="blue">Blue</a>
+            <a href="#" class="dropdown-menu dropdown-color" data-color="green">Green</a>
+            <a href="#" class="dropdown-menu dropdown-color" data-color="yellow">Yellow</a>
+            
+        </div>
+</div>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/bootstrap/tryit.asp?filename=trybs_dropdown-divider&stacked=h by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:57 GMT -->
+</html>
+
+    </body>
+</html>
